@@ -39,6 +39,5 @@ This is a simple Discord bot using free-tier aws services.
 If you plan on using DynamoDB run `npm i @aws-sdk/client-dynamodb`
 
 ## Addt. Resources:
-- https://betterprogramming.pub/build-a-discord-bot-with-aws-lambda-api-gateway-cc1cff750292
 - https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/welcome.html#welcome_whats_new_v3
 - https://discord.com/developers/docs/interactions/application-commands#slash-commands
