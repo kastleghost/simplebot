@@ -1,3 +1,7 @@
+# Nodejs Modules
+**/node_modules
+*.json
+
 # Compiled class file
 *.class
 
