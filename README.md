@@ -16,22 +16,24 @@ This is a simple Discord bot using free-tier aws services.
     - check Configure cross-origin resource sharing (CORS)
     - leave the rest default
 
+- Setup of Nodejs:  
+  - create a new directory i.e. lambda_files to store **node_modules** as well as **.js** files for Lambda
+  - on local machine run `npm i tweetnacl`
+  - setup your **index.js** and any other files
+  - zip within the folder, including node_modules, and upload to Lambda function
+
 - Setup of Discord Application:
    - Create a new Application
    - from Lambda, copy the function URL, into Interactions Endpoint URL
    - from Discord Application, copy the Public Key, into Lambda configuration as an Environment Variable
 
-- Setup of Nodejs:  
-  - create a new directory to store **node_modules** as well as **.js** files for Lambda
-  - on local machine run `npm i tweetnacl`
-  - setup your **index.js** and any other files
-  - zip within the folder and upload to Lambda 
-
 - Registering Commands:  
-   - on local machine, create a new directory separate from lambda files
+   - on local machine, create a new directory separate from lambda_files
    - run `npm i axios dotenv`
    - update the **.env** file with your BOT TOKEN, APP ID, and GUILD ID
    - run the **register.js** script
+      - use guild commands for either testing or specific slash commands related to that discord server
+      - use global commands for slash commands that apply to everything
 
 ### Optionals:
 If you plan on using DynamoDB run `npm i @aws-sdk/client-dynamodb`
