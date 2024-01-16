@@ -23,6 +23,8 @@ This is a simple Discord bot using free-tier aws services.
 - Zip within the folder, including node_modules, and upload to Lambda function
 
 ### 3. Setup of Discord Application:
+> **NOTE:**
+> Assign permissions based on the needs of your function, DO NOT grant Administrator.
 - Create a new Application
 - OAuth2, URL Generator Scopes
   - application.commands
@@ -34,16 +36,12 @@ This is a simple Discord bot using free-tier aws services.
 
 ### 4. Registering Commands:
 > **NOTE:**
-> use guild commands for either testing or specific slash commands related to that discord server 
+> use guild_commands for either testing or specific commands related to that discord server 
 > and use global commands for slash commands that apply to everything.
-
-
 - On local machine, create a new directory separate from lambda_files
   - run `npm i axios dotenv`
 - update the **.env** file with your BOT TOKEN, APP ID, and GUILD ID
 - run `node register.js` script
-
-callout
 
 ## Optionals:
 If you plan on using DynamoDB run `npm i @aws-sdk/client-dynamodb`
