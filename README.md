@@ -31,7 +31,7 @@ This is a simple Discord bot using free-tier aws services.
    - on local machine, create a new directory separate from lambda_files
    - run `npm i axios dotenv`
    - update the **.env** file with your BOT TOKEN, APP ID, and GUILD ID
-   - run the **register.js** script
+   - run `node register.js` script
       - use guild commands for either testing or specific slash commands related to that discord server
       - use global commands for slash commands that apply to everything
 

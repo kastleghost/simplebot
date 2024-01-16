@@ -24,7 +24,7 @@ axios.get(`https://discord.com/api/v10/applications/${applicationId}/commands`, 
   if (commandToDelete) {
     const commandId = commandToDelete.id;
     // Delete the command using the command ID
-    axios.delete(`https://discord.com/api/v10/applications/${applicationId}/guilds/${guildId}/commands/${commandId}`, {
+    axios.delete(`https://discord.com/api/v10/applications/${applicationId}/commands/${commandId}`, {
       headers: headers,
     })
     .then(() => {
