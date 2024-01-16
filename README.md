@@ -1,5 +1,5 @@
 # Simplebot
-This is a simple Discord bot using free-tier aws services.
+This is a simple introductory Discord bot leveraging AWS free-tier services.
 
 # To get started:
 ## Pre-reqs:
@@ -24,15 +24,15 @@ This is a simple Discord bot using free-tier aws services.
 
 ### 3. Setup of Discord Application:
 > **NOTE:**
-> Assign permissions based on the needs of your function, DO NOT grant Administrator.
-- Create a new Application
-- OAuth2, URL Generator Scopes
+> Assign permissions based on the needs of your function; DO NOT grant Administrator.
+- Create a new Application on the Discord Developer Portal.
+- In the Application's settings, navigate to the "OAuth2" section, and generate the URL with the following Scopes:
   - application.commands
   - bot
 - Bot Permissions
     - use slash commands
-- from Discord Application, copy the Public Key, into Lambda configuration as an Environment Variable "PUBLIC_KEY"
-- from Lambda, copy the function URL, into Discord Interactions Endpoint URL
+- Copy the Public Key from the Discord Application and set it as an Environment Variable named "PUBLIC_KEY" in the Lambda configuration.
+- Copy the function URL from Lambda and use it as the Discord Interactions Endpoint URL.
 
 ### 4. Registering Commands:
 > **NOTE:**
