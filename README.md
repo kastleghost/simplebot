@@ -33,9 +33,9 @@ This is a simple Discord bot using free-tier aws services.
 - from Lambda, copy the function URL, into Discord Interactions Endpoint URL
 
 ### 4. Registering Commands:
-> [!NOTE] <br>
-> use guild commands for either testing or specific slash commands related to that discord server <br>
-> use global commands for slash commands that apply to everything
+> **NOTE:**
+> use guild commands for either testing or specific slash commands related to that discord server 
+> and use global commands for slash commands that apply to everything.
 
 
 - On local machine, create a new directory separate from lambda_files
