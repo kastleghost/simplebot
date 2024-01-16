@@ -1,6 +1,4 @@
 const nacl = require('tweetnacl');
-const AWS = require('aws-sdk');
-const dynamodb = new AWS.DynamoDB.DocumentClient({region: "us-east-1"});
 
 const helloCommandHandler = require('./_hello'); // Import the helloCommandHandler module
 const greetCommandHandler = require('./_greet'); // Import the greetCommandHandler module
