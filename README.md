@@ -26,7 +26,7 @@ This is a simple introductory Discord bot leveraging AWS free-tier services.
 
 ### 3. Setup of Discord Application:
 > **NOTE:**<br>
-> Assign permissions based on the needs of your function; DO NOT grant Administrator
+> Assign permissions based on the needs of your function; DO NOT grant Administrator.
 - Create a new Application on the Discord Developer Portal
 - In the Application's settings, navigate to the "OAuth2" section, and generate the URL with the following Scopes:
   - application.commands
@@ -38,14 +38,14 @@ This is a simple introductory Discord bot leveraging AWS free-tier services.
 
 ### 4. Registering Commands:
 > **NOTE:**<br>
-> To register commands we use [axios](https://axios-http.com/docs/intro) to query and post to Discord API<br>
-> Secrets are stored in .env which uses [dotenv](https://www.npmjs.com/package/dotenv)<br>
-> [!TIP]
-> Global commands could take up to 1 hour to create, delete or modify on guilds. If you need to update a command quickly for testing you can create it as a guild command.
+> To register commands we use [axios](https://axios-http.com/docs/intro) to query and post to Discord API.<br>
+> Secrets are stored in .env which uses [dotenv](https://www.npmjs.com/package/dotenv).<br>
 - On local machine, create a new directory separate from lambda_files
   - run `npm i axios dotenv`
 - update the **.env** file with your BOT TOKEN, APP ID, and GUILD ID
 - run `node register.js` script
+> **TIP:**<br>
+> Global commands could take up to 1 hour to create, delete or modify on guilds. If you need to update a command quickly for testing you can create it as a guild command.
 
 ## Optionals:
 If you plan on using DynamoDB run `npm i @aws-sdk/client-dynamodb`
