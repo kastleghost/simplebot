@@ -45,7 +45,7 @@ This is a simple introductory Discord bot leveraging AWS free-tier services.
 - update the **.env** file with your BOT TOKEN, APP ID, and GUILD ID
 - run `node register.js` script
 > **TIP:**<br>
-> Global commands could take up to 1 hour to create, delete or modify on guilds. If you need to update a command quickly for testing you can create it as a guild command.
+> Global commands could take up to 1 hour to create, delete or modify. If you need to update a command quickly for testing you can create it as a guild command.
 
 ## Optionals:
 If you plan on using DynamoDB run `npm i @aws-sdk/client-dynamodb`
